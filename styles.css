@@ -194,10 +194,10 @@ img { max-width: 100%; }
 
 .screenshot-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .screenshot-grid .media-shot img { height: 260px; }
-.finding-box { margin-top: 26px; border-radius: 22px; background: var(--dark); color: white; padding: 34px; display: grid; grid-template-columns: .8fr 1.2fr; gap: 50px; align-items: start; }
+.finding-box { margin-top: 24px; border-radius: 20px; background: var(--dark); color: white; padding: 22px 28px; display: grid; grid-template-columns: minmax(220px, .55fr) 1.45fr; gap: 28px; align-items: center; }
 .finding-box .eyebrow { color: #86c3ad; }
-.finding-box h3 { font-size: 26px; margin: 0; line-height: 1.15; letter-spacing: -.03em; }
-.finding-box > p { margin: 2px 0 0; color: #b7ccc5; }
+.finding-box h3 { font-size: 24px; margin: 0; line-height: 1.15; letter-spacing: -.03em; }
+.finding-box > p { margin: 0; color: #b7ccc5; }
 
 .lesson-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
 .lesson-card { min-height: 230px; background: var(--tint); }
