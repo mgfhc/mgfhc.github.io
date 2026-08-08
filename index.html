@@ -25,6 +25,7 @@
         <a href="#journey">Journey</a>
         <a href="#workflow">Workflow</a>
         <a href="#technology">Technology</a>
+        <a href="#interoperability">Interop</a>
         <a href="#workstreams">Workstreams</a>
         <a href="#testing">Testing</a>
         <a href="#lessons">Lessons</a>
@@ -100,7 +101,7 @@
             <small>Fictional clinic identity created for the HiT4EMR project</small>
           </div>
           <figure class="media-shot project-shot">
-            <a href="assets/screenshots/clinical-encounter.png" target="_blank" rel="noopener" aria-label="Open clinical encounter screenshot in a new tab">
+            <a href="assets/screenshots/clinical-encounter.png" class="image-link" aria-label="Enlarge clinical encounter screenshot">
               <img src="assets/screenshots/clinical-encounter.png" alt="OpenEMR clinical encounter showing synthetic patient George Lee with SOAP intake and vitals documentation" />
             </a>
             <figcaption><strong>Clinical workflow in the shared environment</strong><span>SOAP intake and vitals documented during the August 1 simulation.</span></figcaption>
@@ -216,26 +217,26 @@
     <section class="section section-pad interop-section" id="interoperability">
       <div class="shell interop-grid">
         <div class="section-copy reveal">
-          <p class="eyebrow">Interoperability in practice</p>
-          <h2>Testing standards-based exchange</h2>
-          <p>The team tested authenticated FHIR R4 reads against OpenEMR and documented a simulated closed-loop HL7 v2 laboratory workflow using synthetic data.</p>
+          <p class="eyebrow">Interoperability</p>
+          <h2>FHIR and lab workflows</h2>
+          <p>The team used OpenEMR’s FHIR API to retrieve clinical data and tested a mock lab order-and-result workflow with synthetic data.</p>
 
           <div class="interop-facts">
             <article>
               <span>FHIR R4</span>
-              <strong>API retrieval</strong>
-              <p>Patient, Observation and DiagnosticReport reads were exercised through authenticated API requests.</p>
+              <strong>Read clinical data</strong>
+              <p>Authenticated requests retrieved Patient, Observation and DiagnosticReport resources.</p>
             </article>
             <article>
               <span>HL7 v2</span>
-              <strong>Lab workflow</strong>
-              <p>Order and result handling was demonstrated with a mock laboratory stand-in rather than a live external lab.</p>
+              <strong>Mock lab workflow</strong>
+              <p>Orders and results were tested with a simulated lab, not a live external laboratory.</p>
             </article>
           </div>
         </div>
 
         <figure class="media-shot interop-shot reveal">
-          <a href="assets/screenshots/fhir-diagnostic-report.png" target="_blank" rel="noopener" aria-label="Open FHIR DiagnosticReport API screenshot in a new tab">
+          <a href="assets/screenshots/fhir-diagnostic-report.png" class="image-link" aria-label="Enlarge FHIR DiagnosticReport screenshot">
             <img src="assets/screenshots/fhir-diagnostic-report.png" alt="Postman showing an authenticated OpenEMR FHIR DiagnosticReport request returning a 200 OK JSON response" />
           </a>
           <figcaption>
@@ -254,14 +255,38 @@
           <p>The public showcase describes the project collectively while keeping each workstream visible.</p>
         </div>
         <div class="workstream-grid">
-          <article class="work-card reveal"><span>01</span><h3>Research & Clinical Workflow</h3><p>Defined the simulated clinic context, mapped clinical and administrative workflows, and developed patient journeys used during testing.</p></article>
-          <article class="work-card reveal"><span>02</span><h3>Infrastructure & Deployment</h3><p>Supported shared OpenEMR environments, AWS deployment, HTTPS, backups and technical troubleshooting.</p></article>
-          <article class="work-card reveal"><span>03</span><h3>Security & Compliance</h3><p>Reviewed role-based access, privacy and security considerations, configuration controls and production-readiness gaps.</p></article>
-          <article class="work-card reveal"><span>04</span><h3>UI/UX</h3><p>Evaluated core workflows from the perspective of clinic users, implemented feasible configuration changes and proposed future interface improvements.</p></article>
-          <article class="work-card reveal"><span>05</span><h3>Interoperability</h3><p>Explored FHIR R4, HL7 v2, C-CDA and clinical terminologies, including a simulated closed-loop laboratory exchange.</p></article>
-          <article class="work-card reveal"><span>06</span><h3>Analytics</h3><p>Mapped clinical and operational KPIs to available OpenEMR data and documented reporting limitations and future opportunities.</p></article>
-          <article class="work-card reveal"><span>07</span><h3>QA & Testing</h3><p>Translated project workflows into test scenarios and supported integrated validation and the final clinic-day simulation.</p></article>
-          <article class="work-card reveal"><span>08</span><h3>Documentation</h3><p>Consolidated project guidance, role-based instructions, participant materials and the final evidence package.</p></article>
+          <article class="work-card reveal">
+            <div class="work-card-top"><span>01</span><svg class="work-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5h6M9 9h6M9 13h4M6 3h12a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z"/></svg></div>
+            <h3>Research & Clinical Workflow</h3><p>Mapped clinic workflows and built the patient journeys used in testing.</p>
+          </article>
+          <article class="work-card reveal">
+            <div class="work-card-top"><span>02</span><svg class="work-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v5H4V5Zm0 9h16v5H4v-5Zm3-6h.01M7 17h.01M11 8h6M11 17h6"/></svg></div>
+            <h3>Infrastructure & Deployment</h3><p>Ran shared OpenEMR environments on AWS, including HTTPS, backups and troubleshooting.</p>
+          </article>
+          <article class="work-card reveal">
+            <div class="work-card-top"><span>03</span><svg class="work-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v5c0 4.6 2.8 8.2 7 10 4.2-1.8 7-5.4 7-10V6l-7-3Zm-3 9 2 2 4-5"/></svg></div>
+            <h3>Security & Compliance</h3><p>Reviewed roles, access controls, privacy risks and production-readiness gaps.</p>
+          </article>
+          <article class="work-card reveal">
+            <div class="work-card-top"><span>04</span><svg class="work-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v12H4V5Zm4 16h8M12 17v4M8 9h8M8 12h5"/></svg></div>
+            <h3>UI/UX</h3><p>Audited key workflows, applied feasible UI changes and proposed improvements.</p>
+          </article>
+          <article class="work-card reveal">
+            <div class="work-card-top"><span>05</span><svg class="work-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7h9l-2-2m2 2-2 2M16 17H7l2 2m-2-2 2-2M5 7a3 3 0 1 1 0 6m14-2a3 3 0 1 1 0 6"/></svg></div>
+            <h3>Interoperability</h3><p>Tested FHIR API access, HL7 lab workflows and supporting clinical standards.</p>
+          </article>
+          <article class="work-card reveal">
+            <div class="work-card-top"><span>06</span><svg class="work-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V10h3v10H5Zm6 0V4h3v16h-3Zm6 0v-7h3v7h-3Z"/></svg></div>
+            <h3>Analytics</h3><p>Mapped useful KPIs to OpenEMR data and documented reporting limits.</p>
+          </article>
+          <article class="work-card reveal">
+            <div class="work-card-top"><span>07</span><svg class="work-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v16H5V4Zm3 4 1.5 1.5L12 7m-4 6 1.5 1.5L12 12m2-3h3m-3 5h3"/></svg></div>
+            <h3>QA & Testing</h3><p>Turned workflows into test cases and coordinated integrated testing and Go-Live.</p>
+          </article>
+          <article class="work-card reveal">
+            <div class="work-card-top"><span>08</span><svg class="work-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l4 4v14H7V3Zm7 0v5h5M10 12h5m-5 4h5"/></svg></div>
+            <h3>Documentation</h3><p>Built user guides, role cards and the final project evidence package.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -276,19 +301,19 @@
 
         <div class="screenshot-grid">
           <figure class="media-shot reveal">
-            <a href="assets/screenshots/scheduling-checkin.png" target="_blank" rel="noopener" aria-label="Open scheduling and check-in screenshot in a new tab">
+            <a href="assets/screenshots/scheduling-checkin.png" class="image-link" aria-label="Enlarge scheduling and check-in screenshot">
               <img src="assets/screenshots/scheduling-checkin.png" alt="OpenEMR calendar used during the August 1 simulated clinic day with synthetic patient appointments" />
             </a>
             <figcaption><strong>Scheduling & check-in</strong><span>Front-office activity across the simulated clinic day.</span></figcaption>
           </figure>
           <figure class="media-shot reveal">
-            <a href="assets/screenshots/lab-result.png" target="_blank" rel="noopener" aria-label="Open mock laboratory result screenshot in a new tab">
+            <a href="assets/screenshots/lab-result.png" class="image-link" aria-label="Enlarge mock laboratory result screenshot">
               <img src="assets/screenshots/lab-result.png" alt="Mock laboratory results portal showing a synthetic HbA1c result in the simulated HL7 laboratory workflow" />
             </a>
             <figcaption><strong>Clinical + lab workflow</strong><span>A mock HbA1c result processed through the simulated laboratory stand-in.</span></figcaption>
           </figure>
           <figure class="media-shot reveal">
-            <a href="assets/screenshots/patient-portal.png" target="_blank" rel="noopener" aria-label="Open patient portal screenshot in a new tab">
+            <a href="assets/screenshots/patient-portal.png" class="image-link" aria-label="Enlarge patient portal screenshot">
               <img src="assets/screenshots/patient-portal.png" alt="Maple Grove patient portal showing synthetic medications and health issues for the project test patient" />
             </a>
             <figcaption><strong>Patient-facing follow-up</strong><span>Portal access to patient-facing clinical information.</span></figcaption>
@@ -372,6 +397,14 @@
     </div>
     <div class="shell footer-disclaimer">Educational simulation using fictitious or synthetic patient information. Not a production healthcare deployment or regulatory certification.</div>
   </footer>
+
+  <dialog class="image-lightbox" id="image-lightbox" aria-label="Enlarged project screenshot">
+    <button class="lightbox-close" type="button" aria-label="Close enlarged screenshot">×</button>
+    <figure>
+      <img src="" alt="" />
+      <figcaption></figcaption>
+    </figure>
+  </dialog>
 
   <script src="script.js"></script>
 </body>

@@ -40,3 +40,33 @@ const sectionObserver = new IntersectionObserver(entries => {
 }, { rootMargin: '-25% 0px -60% 0px', threshold: [0.05, 0.25, 0.5] });
 
 sections.forEach(section => sectionObserver.observe(section));
+
+const lightbox = document.querySelector('#image-lightbox');
+
+if (lightbox) {
+  const lightboxImage = lightbox.querySelector('img');
+  const lightboxCaption = lightbox.querySelector('figcaption');
+  const closeButton = lightbox.querySelector('.lightbox-close');
+
+  document.querySelectorAll('.image-link').forEach(link => {
+    link.addEventListener('click', event => {
+      event.preventDefault();
+      const sourceImage = link.querySelector('img');
+      const figure = link.closest('figure');
+      const caption = figure?.querySelector('figcaption strong')?.textContent?.trim() || '';
+
+      lightboxImage.src = link.getAttribute('href');
+      lightboxImage.alt = sourceImage?.alt || '';
+      lightboxCaption.textContent = caption;
+      lightbox.showModal();
+    });
+  });
+
+  const closeLightbox = () => lightbox.close();
+  closeButton.addEventListener('click', closeLightbox);
+  lightboxImage.addEventListener('click', closeLightbox);
+
+  lightbox.addEventListener('click', event => {
+    if (event.target === lightbox) closeLightbox();
+  });
+}
