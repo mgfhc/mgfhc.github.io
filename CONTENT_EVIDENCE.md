@@ -79,6 +79,10 @@ Safe public claims:
 - Limitations were documented
 - Future-state prototypes illustrated proposed improvements
 
+Current public visual:
+- Patient-registration customization showing clearer labels/fields and a Canadian province/territory list
+- This is presented as an implemented UI/UX example, not as a full OpenEMR redesign
+
 Public editorial convention in this site: `UI/UX` rather than the internal package title `UX/UI`.
 
 ## Interoperability
@@ -93,6 +97,13 @@ Safe public claims:
 - HL7 v2 ORM/ORU closed-loop behavior was demonstrated using a mock lab stand-in and synthetic data
 - No real commercial lab / OLIS connection was implemented
 - Ontario connectivity, write-back and certification remained future-state
+
+Current public visuals:
+- Postman `DiagnosticReport` request/response showing a successful FHIR read
+- Mock laboratory order/result evidence
+
+Publication caution:
+The Postman image must not expose a usable bearer token, client secret or other credential.
 
 ## Analytics
 
@@ -123,7 +134,7 @@ Sources:
 - `Summary_Go_Live.pdf`
 - `GOOGLE DRIVE DOC - Revised Execution Structure based on MVP _ Critical Path.pdf`
 
-Grounded themes used in Draft v2:
+Grounded themes used in the current site:
 - common technical baseline
 - narrowing scope around an MVP
 - workflow-level testing
@@ -136,13 +147,24 @@ Repos available in the conversation:
 - `maple-grove-synthea-openemr(1).zip`
 - `maple-grove-openemr-education-module.zip`
 
-They are intentionally not made a major section in Draft v2. If featured later, attribution must clearly distinguish individual/smaller-team technical extensions from project-wide cohort work.
+They are intentionally not made a major section in the current site. If featured later, attribution must clearly distinguish individual/smaller-team technical extensions from project-wide cohort work.
 
 
 ## Project identity / program context
 
-Draft v2 clarifies that **HiT4EMR** is the COMP 4090 course project and **Maple Grove Family Health Centre** is the fictional clinic identity created by the student cohort. Public copy uses **Health Informatics (T402)** for the 2026 cohort and emphasizes the Toronto/Ontario context supplied by the project team.
+The current site clarifies that **HiT4EMR** is the COMP 4090 course project and **Maple Grove Family Health Centre** is the fictional clinic identity created by the student cohort. Public copy uses **Health Informatics (T402)** for the 2026 cohort and emphasizes the Toronto/Ontario context supplied by the project team.
 
 ## Public contact / support
 
-The internal START HERE document identifies James Huynh as a Project Manager, Muyideen Muhammed as instructor, and Leo Chow Bello / Shefali Mehta as project support. Draft v2 publishes James's school email as the temporary site contact and lists the instructor/support names without their email addresses.
+The internal START HERE document identifies James Huynh as a Project Manager, Muyideen Muhammed as instructor, and Leo Chow Bello / Shefali Mehta as project support. The current site uses James's school email as the temporary public contact and lists the instructor/support names without their email addresses. Final public contact details remain a publication decision.
+
+
+## Current public-site editorial choices
+
+- Keep copy concise and readable for a general audience.
+- Use `UI/UX` in public-facing copy.
+- Present the clinical journey as grouped stages rather than eight equal standalone cards.
+- Show real project evidence where it adds value, but avoid turning the site into an evidence archive.
+- Do not use a public pass/fail scoreboard for Go-Live scenarios.
+- State OpenEMR `7.0.2` briefly as the shared AWS project environment.
+- Use the project disclaimer to distinguish the educational simulation from a production clinical deployment.

@@ -1,19 +1,29 @@
 # Asset / publication TODO
 
-## Added in Draft v3
+## Added
+
 - Local Maple Grove full logo and mark.
 - Sanitized/cropped August 1 Go-Live screenshots for:
   - clinical encounter / SOAP intake,
   - scheduling & check-in,
   - mock lab result workflow,
   - patient portal.
+- FHIR/Postman `DiagnosticReport` screenshot.
+- UI/UX evidence showing Canadian patient-registration customization.
 
-## Still useful later
-- One strong FHIR/interoperability screenshot (for example a clean FHIR response/viewer).
-- One strong UI/UX artifact (implemented customization, annotated audit, or prototype).
-- Optional 5–15 second muted MP4 clips for lab and/or portal workflows.
-- Final team-credit names/consent decision.
-- Final public contact decision (current footer contact is provisional).
+## Before public launch
+
+- Confirm the FHIR/Postman screenshot does not expose a usable bearer token or other secret.
+- Complete one final public-safety pass across every screenshot and link.
+- Finalize the team-credit names/consent decision.
+- Finalize the public contact shown in the footer.
+- Confirm the site favicon/branding assets are wired up as intended.
+
+## Optional later
+
+- Add one or two short muted MP4 clips if they materially improve the lab or portal sections.
+- Vendor third-party technology SVGs locally instead of relying on external CDN assets.
+- Add a custom domain only if the group later wants one.
 
 ## Publication rule
 Do not publish raw evidence folders or screenshots that expose session-token URLs, credentials, API secrets, AWS identifiers, private contacts, internal links, or unrelated desktop/browser content. Prefer curated copies under `assets/`.
