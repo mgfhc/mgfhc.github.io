@@ -206,6 +206,14 @@ img { max-width: 100%; }
 .workstream-spotlight { margin-top: 18px; border: 1px solid var(--line); border-radius: 22px; background: var(--tint); padding: 24px; display: grid; grid-template-columns: .72fr 1.28fr; gap: 26px; align-items: center; }
 .workstream-spotlight h3 { margin: 7px 0 10px; font-size: 27px; line-height: 1.1; letter-spacing: -.035em; }
 .workstream-spotlight-copy > p:not(.eyebrow) { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.55; max-width: 45ch; }
+.analytics-shot img { height: auto; aspect-ratio: auto; object-fit: contain; background: white; }
+.workstream-spotlight-copy > p.spotlight-source {
+  margin: 18px 0 0;
+  font-size: 12px;
+  line-height: 1.4;
+}
+.spotlight-source a { color: var(--brand); font-weight: 700; text-decoration: none; }
+.spotlight-source a:hover { text-decoration: underline; }
 .spotlight-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 18px; }
 .spotlight-tags span { border: 1px solid var(--line); border-radius: 999px; padding: 7px 10px; background: white; color: var(--muted); font-size: 11px; font-weight: 700; }
 .uiux-gallery { display: grid; grid-template-columns: 1.55fr .65fr; gap: 10px; min-width: 0; }
