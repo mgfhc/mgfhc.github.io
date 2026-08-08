@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="HiT4EMR — a student OpenEMR implementation project built around the fictional Maple Grove Family Health Centre in a Toronto/Ontario primary-care context." />
+  <title>HiT4EMR | Maple Grove OpenEMR Project Showcase</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="shell nav-wrap">
+      <a class="brand" href="#top" aria-label="Maple Grove home">
+        <span class="brand-mark" aria-hidden="true"><img src="assets/branding/maple-grove-mark.png" alt="" /></span>
+        <span class="brand-copy">
+          <strong>Maple Grove</strong>
+          <small>HiT4EMR Project Showcase</small>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="#project">Project</a>
+        <a href="#journey">Journey</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#technology">Technology</a>
+        <a href="#workstreams">Workstreams</a>
+        <a href="#testing">Testing</a>
+        <a href="#lessons">Lessons</a>
+        <a href="#team">Team</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section-pad">
+      <div class="shell hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">HiT4EMR · COMP 4090 · Health Informatics (T402)</p>
+          <h1>Maple Grove<br />Family Health Centre</h1>
+          <p class="hero-lede">A simulated OpenEMR implementation designed around a Toronto, Ontario primary-care context.</p>
+          <p class="hero-summary">The HiT4EMR student team explored, configured, tested and documented a shared OpenEMR environment across clinical workflow, infrastructure, security, UI/UX, interoperability, analytics, QA and documentation.</p>
+          <div class="hero-pills" aria-label="Project summary">
+            <span>OpenEMR</span>
+            <span>May–August 2026</span>
+            <span>Toronto, Ontario</span>
+            <span>Synthetic data only</span>
+          </div>
+        </div>
+
+        <aside class="hero-panel reveal" aria-label="Project disclaimer">
+          <div class="hero-panel-top">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Educational simulation</span>
+          </div>
+          <div class="hero-panel-body">
+            <p class="panel-kicker">Configured · Integrated · Tested</p>
+            <div class="panel-metric">
+              <strong>8</strong>
+              <span>project workstreams</span>
+            </div>
+            <div class="panel-rule"></div>
+            <div class="panel-metric compact">
+              <strong>3</strong>
+              <span>clinic-day patient journeys</span>
+            </div>
+          </div>
+          <p class="hero-panel-foot">Fictitious clinic. Mock or synthetic patient information. Not a production healthcare deployment.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-pad" id="project">
+      <div class="shell split-grid">
+        <div class="section-copy reveal">
+          <p class="eyebrow">The project</p>
+          <h2>A course project built around a fictional clinic</h2>
+          <p>HiT4EMR is the COMP 4090 course project. The student cohort created Maple Grove Family Health Centre as a fictitious clinic identity and shared Toronto/Ontario primary-care context.</p>
+          <p>Teams then examined how OpenEMR could support that setting across clinical workflow, infrastructure, security, usability, interoperability, analytics and testing before bringing the workstreams together around a shared MVP.</p>
+          <div class="mini-grid">
+            <article>
+              <h3>Simulated clinic</h3>
+              <p>A student-created clinic identity gave every workstream the same clinical and operational context.</p>
+            </article>
+            <article>
+              <h3>Shared environment</h3>
+              <p>A browser-accessible OpenEMR deployment on AWS supported final integration and demonstration.</p>
+            </article>
+            <article>
+              <h3>Cross-team implementation</h3>
+              <p>Clinical, technical and operational workstreams converged into shared workflows and evidence.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="project-visual reveal">
+          <div class="project-logo-card">
+            <img src="assets/branding/maple-grove-logo.png" alt="Maple Grove Family Health Centre" />
+            <small>Fictional clinic identity created for the HiT4EMR project</small>
+          </div>
+          <figure class="media-shot project-shot">
+            <a href="assets/screenshots/clinical-encounter.png" target="_blank" rel="noopener" aria-label="Open clinical encounter screenshot in a new tab">
+              <img src="assets/screenshots/clinical-encounter.png" alt="OpenEMR clinical encounter showing synthetic patient George Lee with SOAP intake and vitals documentation" />
+            </a>
+            <figcaption><strong>Clinical workflow in the shared environment</strong><span>SOAP intake and vitals documented during the August 1 simulation.</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tint section-pad" id="journey">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Project journey</p>
+          <h2>From broad exploration to an integrated MVP</h2>
+          <p>Early work was distributed across teams and environments. By mid-July, the project narrowed around a shared MVP and common testing environment.</p>
+        </div>
+        <ol class="timeline reveal">
+          <li><span class="time">May</span><strong>Discovery & environment setup</strong><small>Initial OpenEMR exploration, clinic context and technical setup.</small></li>
+          <li><span class="time">June</span><strong>Workstream development</strong><small>Workflow, UI/UX, security, interoperability, analytics and documentation work expanded.</small></li>
+          <li><span class="time">Mid-July</span><strong>MVP convergence</strong><small>Teams aligned around the shared OpenEMR 7 environment and a concrete integration path.</small></li>
+          <li><span class="time">July 25</span><strong>Integrated testing</strong><small>Connected workflows were exercised before final demonstration.</small></li>
+          <li><span class="time">August 1</span><strong>Go-Live simulation</strong><small>Three simulated clinic-day patient journeys were completed.</small></li>
+          <li><span class="time">August 5–8</span><strong>Evidence & closeout</strong><small>Final documentation, lessons learned and project package consolidation.</small></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section-pad" id="workflow">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Clinical workflow</p>
+          <h2>Following the patient journey across roles</h2>
+          <p>Research and clinical workflow work established the simulated clinic context and translated primary-care processes into journeys that could be exercised in OpenEMR.</p>
+        </div>
+
+        <div class="workflow reveal" aria-label="Example end-to-end workflow">
+          <div><span>01</span><strong>Appointment</strong></div>
+          <div><span>02</span><strong>Check-in</strong></div>
+          <div><span>03</span><strong>Nursing assessment</strong></div>
+          <div><span>04</span><strong>Provider encounter</strong></div>
+          <div><span>05</span><strong>Lab / orders</strong></div>
+          <div><span>06</span><strong>Follow-up</strong></div>
+          <div><span>07</span><strong>Checkout</strong></div>
+          <div><span>08</span><strong>Patient portal</strong></div>
+        </div>
+
+        <div class="workflow-note reveal">
+          <strong>Three final clinic-day scenarios</strong>
+          <p>Chronic-disease follow-up · Annual preventive care · Same-day acute visit</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark section-pad" id="technology">
+      <div class="shell">
+        <div class="section-heading light reveal">
+          <p class="eyebrow">Technology & standards</p>
+          <h2>Technology used across the project</h2>
+          <p>Core platform technologies are separated from languages, extensions and healthcare standards.</p>
+        </div>
+
+        <div class="tech-group reveal">
+          <div class="tech-group-title">Core platform</div>
+          <div class="tech-grid core-tech">
+            <article class="tech-card"><span class="icon-shell official-logo"><img src="https://www.open-emr.org/wiki/images/e/ec/Login-logo.svg" alt="OpenEMR" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'" /><span class="icon-fallback">OE</span></span><strong>OpenEMR</strong><small>EMR platform</small></article>
+            <article class="tech-card"><span class="icon-shell"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/amazonwebservices.svg" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'" /><span class="icon-fallback">AWS</span></span><strong>AWS EC2</strong><small>Shared cloud environment</small></article>
+            <article class="tech-card">
+              <span class="icon-shell"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/docker.svg" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'" /><span class="icon-fallback">D</span></span>
+              <strong>Docker</strong><small>Containerized deployment</small>
+            </article>
+            <article class="tech-card">
+              <span class="icon-shell"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/mariadb.svg" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'" /><span class="icon-fallback">DB</span></span>
+              <strong>MariaDB</strong><small>Application database</small>
+            </article>
+          </div>
+        </div>
+
+        <div class="tech-group reveal">
+          <div class="tech-group-title">Development & technical extensions</div>
+          <div class="tech-grid dev-tech">
+            <article class="tech-card"><span class="icon-shell"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/php.svg" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'" /><span class="icon-fallback">PHP</span></span><strong>PHP</strong></article>
+            <article class="tech-card"><span class="icon-shell"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/python.svg" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'" /><span class="icon-fallback">PY</span></span><strong>Python</strong></article>
+            <article class="tech-card"><span class="icon-shell"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/javascript.svg" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'" /><span class="icon-fallback">JS</span></span><strong>JavaScript</strong></article>
+            <article class="tech-card"><span class="icon-shell"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/html5.svg" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'" /><span class="icon-fallback">HTML</span></span><strong>HTML5</strong></article>
+            <article class="tech-card"><span class="icon-shell"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/css.svg" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'" /><span class="icon-fallback">CSS</span></span><strong>CSS</strong></article>
+          </div>
+        </div>
+
+        <div class="standards reveal" aria-label="Healthcare interoperability standards and terminology">
+          <span>FHIR R4</span><span>HL7 v2</span><span>C-CDA</span><span>LOINC</span><span>ICD-10</span><span>OAuth2</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-pad" id="workstreams">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Workstreams</p>
+          <h2>One project, eight areas of focus</h2>
+          <p>The public showcase describes the project collectively while keeping each workstream visible.</p>
+        </div>
+        <div class="workstream-grid">
+          <article class="work-card reveal"><span>01</span><h3>Research & Clinical Workflow</h3><p>Defined the simulated clinic context, mapped clinical and administrative workflows, and developed patient journeys used during testing.</p></article>
+          <article class="work-card reveal"><span>02</span><h3>Infrastructure & Deployment</h3><p>Supported shared OpenEMR environments, AWS deployment, HTTPS, backups and technical troubleshooting.</p></article>
+          <article class="work-card reveal"><span>03</span><h3>Security & Compliance</h3><p>Reviewed role-based access, privacy and security considerations, configuration controls and production-readiness gaps.</p></article>
+          <article class="work-card reveal"><span>04</span><h3>UI/UX</h3><p>Evaluated core workflows from the perspective of clinic users, implemented feasible configuration changes and proposed future interface improvements.</p></article>
+          <article class="work-card reveal"><span>05</span><h3>Interoperability</h3><p>Explored FHIR R4, HL7 v2, C-CDA and clinical terminologies, including a simulated closed-loop laboratory exchange.</p></article>
+          <article class="work-card reveal"><span>06</span><h3>Analytics</h3><p>Mapped clinical and operational KPIs to available OpenEMR data and documented reporting limitations and future opportunities.</p></article>
+          <article class="work-card reveal"><span>07</span><h3>QA & Testing</h3><p>Translated project workflows into test scenarios and supported integrated validation and the final clinic-day simulation.</p></article>
+          <article class="work-card reveal"><span>08</span><h3>Documentation</h3><p>Consolidated project guidance, role-based instructions, participant materials and the final evidence package.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tint section-pad" id="testing">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Integrated testing & Go-Live simulation</p>
+          <h2>Putting the pieces together</h2>
+          <p>The final phase brought the project’s workstreams together through three simulated clinic-day journeys. The exercise focused less on proving that individual OpenEMR features existed and more on whether role handoffs, permissions, documentation, lab activity, appointments and patient-facing interactions worked together in the configured environment.</p>
+        </div>
+
+        <div class="screenshot-grid">
+          <figure class="media-shot reveal">
+            <a href="assets/screenshots/scheduling-checkin.png" target="_blank" rel="noopener" aria-label="Open scheduling and check-in screenshot in a new tab">
+              <img src="assets/screenshots/scheduling-checkin.png" alt="OpenEMR calendar used during the August 1 simulated clinic day with synthetic patient appointments" />
+            </a>
+            <figcaption><strong>Scheduling & check-in</strong><span>Front-office activity across the simulated clinic day.</span></figcaption>
+          </figure>
+          <figure class="media-shot reveal">
+            <a href="assets/screenshots/lab-result.png" target="_blank" rel="noopener" aria-label="Open mock laboratory result screenshot in a new tab">
+              <img src="assets/screenshots/lab-result.png" alt="Mock laboratory results portal showing a synthetic HbA1c result in the simulated HL7 laboratory workflow" />
+            </a>
+            <figcaption><strong>Clinical + lab workflow</strong><span>A mock HbA1c result processed through the simulated laboratory stand-in.</span></figcaption>
+          </figure>
+          <figure class="media-shot reveal">
+            <a href="assets/screenshots/patient-portal.png" target="_blank" rel="noopener" aria-label="Open patient portal screenshot in a new tab">
+              <img src="assets/screenshots/patient-portal.png" alt="Maple Grove patient portal showing synthetic medications and health issues for the project test patient" />
+            </a>
+            <figcaption><strong>Patient-facing follow-up</strong><span>Portal access to patient-facing clinical information.</span></figcaption>
+          </figure>
+        </div>
+
+        <div class="finding-box reveal">
+          <div>
+            <p class="eyebrow">What the exercise surfaced</p>
+            <h3>Integration issues became findings, not marketing copy.</h3>
+          </div>
+          <p>The planned journeys were completed while testing also exposed non-blocking issues involving role permissions, portal access, navigation and workflow dependencies. Those findings informed documentation, workarounds and future-state recommendations.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-pad" id="lessons">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Lessons learned</p>
+          <h2>What we learned</h2>
+        </div>
+        <div class="lesson-grid">
+          <article class="lesson-card reveal"><span>01</span><h3>Align environments early</h3><p>Version and environment differences created avoidable integration friction.</p></article>
+          <article class="lesson-card reveal"><span>02</span><h3>Narrow to an MVP</h3><p>A defined integration scope made cross-team testing much more manageable.</p></article>
+          <article class="lesson-card reveal"><span>03</span><h3>Test the whole workflow</h3><p>Roles, permissions and handoffs matter as much as individual features.</p></article>
+          <article class="lesson-card reveal"><span>04</span><h3>Document what breaks</h3><p>Clear guides, support and honest limitation notes made troubleshooting useful.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section future section-pad" id="future">
+      <div class="shell future-grid reveal">
+        <div>
+          <p class="eyebrow">Beyond the simulation</p>
+          <h2>A demonstration, not a production deployment.</h2>
+        </div>
+        <div>
+          <p>Real clinical use would require additional privacy governance, security operations, recovery planning, monitoring and Ontario health-system integrations.</p>
+          <div class="future-pills"><span>Security & privacy</span><span>Recovery & operations</span><span>Ontario integrations</span><span>Monitoring & support</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-pad" id="team">
+      <div class="shell team-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow">The project team</p>
+          <h2>A cohort-scale collaborative implementation</h2>
+          <p>The Maple Grove OpenEMR project was developed collaboratively through eight project workstreams within COMP 4090 at George Brown Polytechnic.</p>
+          <p class="team-note">Individual acknowledgements will be finalized after the team decides who wishes to be named publicly and how contribution should be represented.</p>
+        </div>
+        <div class="team-list reveal">
+          <span>Research & Clinical Workflow</span>
+          <span>Infrastructure & Deployment</span>
+          <span>Security & Compliance</span>
+          <span>UI/UX</span>
+          <span>Interoperability</span>
+          <span>Analytics</span>
+          <span>QA & Testing</span>
+          <span>Documentation</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-main">
+      <div>
+        <strong>HiT4EMR · Maple Grove Family Health Centre</strong>
+        <p>COMP 4090 · Health Informatics (T402) · George Brown Polytechnic · Toronto, Ontario · Spring/Summer 2026</p>
+      </div>
+      <div>
+        <strong>Course support</strong>
+        <p>Instructor: Muyideen Muhammed · Project support: Leo Chow Bello and Shefali Mehta</p>
+      </div>
+      <div>
+        <strong>Site contact</strong>
+        <p>James Huynh · <a href="mailto:james.huynh@georgebrown.ca">james.huynh@georgebrown.ca</a></p>
+      </div>
+    </div>
+    <div class="shell footer-disclaimer">Educational simulation using fictitious or synthetic patient information. Not a production healthcare deployment or regulatory certification.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
