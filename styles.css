@@ -181,6 +181,17 @@ img { max-width: 100%; }
 .work-card h3, .lesson-card h3 { margin: 24px 0 9px; font-size: 19px; line-height: 1.15; letter-spacing: -.025em; }
 .work-card p, .lesson-card p { margin: 0; color: var(--muted); font-size: 12.5px; line-height: 1.5; }
 
+.workstream-spotlight { margin-top: 18px; border: 1px solid var(--line); border-radius: 22px; background: var(--tint); padding: 24px; display: grid; grid-template-columns: .72fr 1.28fr; gap: 26px; align-items: center; }
+.workstream-spotlight h3 { margin: 7px 0 10px; font-size: 27px; line-height: 1.1; letter-spacing: -.035em; }
+.workstream-spotlight-copy > p:not(.eyebrow) { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.55; max-width: 45ch; }
+.spotlight-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 18px; }
+.spotlight-tags span { border: 1px solid var(--line); border-radius: 999px; padding: 7px 10px; background: white; color: var(--muted); font-size: 11px; font-weight: 700; }
+.uiux-gallery { display: grid; grid-template-columns: 1.55fr .65fr; gap: 10px; min-width: 0; }
+.uiux-shot { margin: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 15px; background: white; }
+.uiux-shot .image-link { display: block; background: white; }
+.uiux-shot img { display: block; width: 100%; height: 185px; object-fit: contain; background: white; }
+.uiux-shot figcaption { padding: 9px 11px 10px; border-top: 1px solid var(--line); color: var(--muted); font-size: 10.5px; line-height: 1.35; }
+
 .screenshot-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .screenshot-grid .media-shot img { height: 260px; }
 .finding-box { margin-top: 26px; border-radius: 22px; background: var(--dark); color: white; padding: 34px; display: grid; grid-template-columns: .8fr 1.2fr; gap: 50px; align-items: start; }
@@ -255,9 +266,17 @@ img { max-width: 100%; }
   .workflow-stage + .workflow-stage { border-left: 0; border-top: 1px solid var(--line); }
   .workflow-stage + .workflow-stage::before { content: "↓"; left: 20px; top: -10px; }
   .workstream-grid, .screenshot-grid, .lesson-grid, .team-list, .tech-grid, .core-tech { grid-template-columns: 1fr; }
+  .workstream-spotlight { grid-template-columns: 1fr; }
+  .uiux-gallery { grid-template-columns: 1fr 1fr; }
   .work-card, .lesson-card { min-height: auto; }
   .work-card h3, .lesson-card h3 { margin-top: 30px; }
   .section-copy h2, .section-heading h2, .future h2 { font-size: 40px; }
+}
+
+@media (max-width: 560px) {
+  .workstream-spotlight { padding: 18px; }
+  .uiux-gallery { grid-template-columns: 1fr; }
+  .uiux-shot img { height: auto; max-height: 240px; }
 }
 
 /* Interoperability evidence */
