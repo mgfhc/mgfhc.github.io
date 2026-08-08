@@ -172,6 +172,20 @@ img { max-width: 100%; }
   background: rgba(255,255,255,.96);
 }
 .icon-shell.brand-icon img { width: 30px; height: 30px; filter: none; opacity: 1; }
+.js-brand-mark {
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  padding: 3px 3px 2px;
+  border-radius: 2px;
+  background: #f7df1e;
+  color: #111;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font: 600 14px/1 Arial, sans-serif;
+  letter-spacing: -.04em;
+}
 .icon-shell.aws-service-icon img { width: 30px; height: 30px; filter: none; opacity: 1; }
 .icon-shell.official-logo { width: 88px; height: 42px; padding: 5px 8px; border-radius: 10px; background: rgba(255,255,255,.96); }
 .icon-shell.official-logo img { width: 72px; height: 30px; object-fit: contain; filter: none; opacity: 1; }
