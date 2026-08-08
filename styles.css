@@ -314,7 +314,7 @@ img { max-width: 100%; }
   border-radius: 999px;
   background: var(--tint);
   color: #315b4f;
-  font-size: 10px;
+  font-size: 9.5px;
   font-weight: 700;
   line-height: 1.15;
 }
@@ -387,6 +387,12 @@ img { max-width: 100%; }
   background: #eaf3f9;
   color: #315f7a;
   font-weight: 700;
+}
+.role-pills .role-pill--support {
+  border-color: #d7ddd9;
+  background: #f4f6f5;
+  color: #66706c;
+  font-weight: 600;
 }
 .contributor-grid--students .contributor-card { padding: 15px 16px; }
 .contributor-grid--students .contributor-card h3 {
