@@ -135,19 +135,34 @@
           <p>Research and clinical workflow work established the simulated clinic context and translated primary-care processes into journeys that could be exercised in OpenEMR.</p>
         </div>
 
-        <div class="workflow reveal" aria-label="Example end-to-end workflow">
-          <div><span>01</span><strong>Appointment</strong></div>
-          <div><span>02</span><strong>Check-in</strong></div>
-          <div><span>03</span><strong>Nursing assessment</strong></div>
-          <div><span>04</span><strong>Provider encounter</strong></div>
-          <div><span>05</span><strong>Lab / orders</strong></div>
-          <div><span>06</span><strong>Follow-up</strong></div>
-          <div><span>07</span><strong>Checkout</strong></div>
-          <div><span>08</span><strong>Patient portal</strong></div>
-        </div>
+        <ol class="workflow-path reveal" aria-label="Example patient journey from arrival to portal follow-up">
+          <li class="workflow-stage">
+            <span class="workflow-stage-label">Arrival</span>
+            <div class="workflow-step"><b>01</b><span>Appointment</span></div>
+            <div class="workflow-step"><b>02</b><span>Check-in</span></div>
+          </li>
+          <li class="workflow-stage">
+            <span class="workflow-stage-label">Assessment</span>
+            <div class="workflow-step"><b>03</b><span>Nursing assessment</span></div>
+          </li>
+          <li class="workflow-stage">
+            <span class="workflow-stage-label">Clinical care</span>
+            <div class="workflow-step"><b>04</b><span>Provider encounter</span></div>
+            <div class="workflow-step"><b>05</b><span>Lab / orders</span></div>
+          </li>
+          <li class="workflow-stage">
+            <span class="workflow-stage-label">Closeout</span>
+            <div class="workflow-step"><b>06</b><span>Follow-up</span></div>
+            <div class="workflow-step"><b>07</b><span>Checkout</span></div>
+          </li>
+          <li class="workflow-stage">
+            <span class="workflow-stage-label">Patient access</span>
+            <div class="workflow-step"><b>08</b><span>Patient portal</span></div>
+          </li>
+        </ol>
 
         <div class="scenario-strip reveal" aria-label="Final clinic-day scenarios">
-          <strong>Clinic-day scenarios</strong>
+          <strong>Final scenarios</strong>
           <div class="scenario-pills">
             <span>Chronic-disease follow-up</span>
             <span>Annual preventive care</span>
