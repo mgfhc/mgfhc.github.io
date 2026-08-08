@@ -365,6 +365,11 @@ img { max-width: 100%; }
   border-color: #d5e3de;
   background: #fff;
 }
+.contributor-card--key.contributor-card--spotlight {
+  border-color: #a9cfc2;
+  background: linear-gradient(145deg, #ffffff 0%, #edf8f3 100%);
+  box-shadow: 0 9px 26px rgba(30, 84, 69, .08);
+}
 .role-pills .role-pill--lead {
   border-color: var(--brand);
   background: var(--brand);
