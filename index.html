@@ -408,21 +408,21 @@
         <div class="section-heading team-heading reveal">
           <p class="eyebrow">The project team</p>
           <h2>A cohort-wide collaborative project</h2>
-          <p>HiT4EMR was completed across eight workstreams. This preview shows one way to credit students who opt in, with each person’s project roles listed directly.</p>
+          <p>HiT4EMR was completed across eight workstreams. This preview separates project leadership, workstream leads and the wider cohort while keeping each person’s roles visible.</p>
           <p class="team-note">Preview only. Final public names and roles should be confirmed with each student before publication.</p>
         </div>
 
         <div class="contributor-legend reveal">
           <span aria-hidden="true"></span>
-          <p>Highlighted cards recognize project leadership or significant project contributions.</p>
+          <p>Highlighted cards recognize significant project contributions.</p>
         </div>
 
-        <div class="contributor-grid reveal" aria-label="Example student contributor credits">
-          <article class="contributor-card contributor-card--lead contributor-card--spotlight">
-            <div class="contributor-topline"><span>Project leadership</span></div>
+        <div class="contributor-tier-heading reveal"><span>Project Leadership</span></div>
+        <div class="contributor-grid contributor-grid--leadership reveal" aria-label="Project leadership">
+          <article class="contributor-card contributor-card--leadership contributor-card--spotlight">
             <h3>Kristina Mzhelskaia</h3>
             <div class="role-pills">
-              <span>Project Team Lead</span>
+              <span class="role-pill--lead">Project Team Lead</span>
               <span>Documentation</span>
               <span>Infrastructure &amp; Deployment</span>
               <span>Research &amp; Clinical Workflow</span>
@@ -430,73 +430,103 @@
             </div>
           </article>
 
-          <article class="contributor-card">
-            <h3>James Huynh</h3>
-            <div class="role-pills">
-              <span>Project Manager</span>
-              <span>Analytics</span>
-              <span>Documentation</span>
-              <span>Infrastructure &amp; Deployment</span>
-            </div>
-          </article>
-
-          <article class="contributor-card contributor-card--spotlight">
+          <article class="contributor-card contributor-card--leadership contributor-card--spotlight">
             <h3>Zhongnan (Jordan) Yang</h3>
             <div class="role-pills">
-              <span>Project Manager</span>
+              <span class="role-pill--lead">Project Manager</span>
+              <span class="role-pill--lead">UI/UX Lead</span>
               <span>Analytics</span>
               <span>Infrastructure &amp; Deployment</span>
-              <span>UI/UX</span>
             </div>
           </article>
 
-          <article class="contributor-card contributor-card--spotlight">
-            <h3>Vishwa Rathod</h3>
+          <article class="contributor-card contributor-card--leadership">
+            <h3>James Huynh</h3>
             <div class="role-pills">
-              <span>Interoperability</span>
-            </div>
-          </article>
-
-          <article class="contributor-card contributor-card--spotlight">
-            <h3>Tina Shen</h3>
-            <div class="role-pills">
-              <span>Security &amp; Compliance</span>
-            </div>
-          </article>
-
-          <article class="contributor-card">
-            <h3>Kiki Pike</h3>
-            <div class="role-pills">
+              <span class="role-pill--lead">Project Manager</span>
+              <span class="role-pill--lead">Infrastructure &amp; Deployment Lead</span>
               <span>Analytics</span>
-              <span>Infrastructure &amp; Deployment</span>
-              <span>UI/UX</span>
-            </div>
-          </article>
-
-          <article class="contributor-card">
-            <h3>Oyinkansolami Ayanleye</h3>
-            <div class="role-pills">
               <span>Documentation</span>
-            </div>
-          </article>
-
-          <article class="contributor-card">
-            <h3>Venkata Naga Sai Charan Kota</h3>
-            <div class="role-pills">
-              <span>QA &amp; Testing</span>
-            </div>
-          </article>
-
-          <article class="contributor-card">
-            <h3>Tiffany Toussaint</h3>
-            <div class="role-pills">
-              <span>Research &amp; Clinical Workflow</span>
-              <span>UI/UX</span>
             </div>
           </article>
         </div>
 
-        <p class="team-credit-note reveal">The project also included contributions from additional Health Informatics (T402) students across the eight workstreams.</p>
+        <div class="contributor-tier-heading reveal"><span>Workstream Leads</span></div>
+        <div class="contributor-grid contributor-grid--leads reveal" aria-label="Workstream leads">
+          <article class="contributor-card contributor-card--workstream-lead">
+            <h3>Tiffany Toussaint</h3>
+            <div class="role-pills">
+              <span class="role-pill--lead">Research &amp; Clinical Workflow Lead</span>
+              <span>UI/UX</span>
+            </div>
+          </article>
+
+          <article class="contributor-card contributor-card--workstream-lead contributor-card--spotlight">
+            <h3>Tina Shen</h3>
+            <div class="role-pills">
+              <span class="role-pill--lead">Security &amp; Compliance Lead</span>
+            </div>
+          </article>
+
+          <article class="contributor-card contributor-card--workstream-lead contributor-card--spotlight">
+            <h3>Vishwa Rathod</h3>
+            <div class="role-pills">
+              <span class="role-pill--lead">Interoperability Lead</span>
+            </div>
+          </article>
+
+          <article class="contributor-card contributor-card--workstream-lead">
+            <h3>Kiki Pike</h3>
+            <div class="role-pills">
+              <span class="role-pill--lead">Analytics Lead</span>
+              <span>Infrastructure &amp; Deployment</span>
+              <span>UI/UX</span>
+            </div>
+          </article>
+
+          <article class="contributor-card contributor-card--workstream-lead">
+            <h3>Venkata Naga Sai Charan Kota</h3>
+            <div class="role-pills">
+              <span class="role-pill--lead">QA &amp; Testing Lead</span>
+            </div>
+          </article>
+
+          <article class="contributor-card contributor-card--workstream-lead">
+            <h3>Oyinkansolami Ayanleye</h3>
+            <div class="role-pills">
+              <span class="role-pill--lead">Documentation Lead</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="contributor-tier-heading reveal"><span>Student Contributors</span></div>
+        <div class="contributor-grid contributor-grid--students reveal" aria-label="Student contributors">
+          <article class="contributor-card"><h3>Akash Ashok Kumar</h3><div class="role-pills"><span>QA &amp; Testing</span></div></article>
+          <article class="contributor-card"><h3>Chinyelu Nwenweh</h3><div class="role-pills"><span>Analytics</span></div></article>
+          <article class="contributor-card"><h3>Esther Agyemang</h3><div class="role-pills"><span>Security &amp; Compliance</span><span>UI/UX</span></div></article>
+          <article class="contributor-card"><h3>Francis Siaw</h3><div class="role-pills"><span>Documentation</span></div></article>
+          <article class="contributor-card"><h3>Frank Asare</h3><div class="role-pills"><span>Interoperability</span></div></article>
+          <article class="contributor-card"><h3>George Maleko</h3><div class="role-pills"><span>Security &amp; Compliance</span></div></article>
+          <article class="contributor-card contributor-card--spotlight"><h3>Hetakshee Koshti</h3><div class="role-pills"><span>Interoperability</span></div></article>
+          <article class="contributor-card"><h3>Janine Alyssa Atienza</h3><div class="role-pills"><span>UI/UX</span></div></article>
+          <article class="contributor-card"><h3>Janvi Patel</h3><div class="role-pills"><span>QA &amp; Testing</span></div></article>
+          <article class="contributor-card"><h3>Jay Patel</h3><div class="role-pills"><span>Research &amp; Clinical Workflow</span></div></article>
+          <article class="contributor-card"><h3>Jhoanna Mae Agustin</h3><div class="role-pills"><span>UI/UX</span></div></article>
+          <article class="contributor-card"><h3>Mann Tandel</h3><div class="role-pills"><span>QA &amp; Testing</span></div></article>
+          <article class="contributor-card"><h3>Marine</h3><div class="role-pills"><span>Research &amp; Clinical Workflow</span></div></article>
+          <article class="contributor-card"><h3>Mencha Tembong</h3><div class="role-pills"><span>Interoperability</span><span>UI/UX</span></div></article>
+          <article class="contributor-card"><h3>Mohammed Irshad Syed Ali</h3><div class="role-pills"><span>Analytics</span></div></article>
+          <article class="contributor-card"><h3>Omar Al-amodi</h3><div class="role-pills"><span>Research &amp; Clinical Workflow</span></div></article>
+          <article class="contributor-card"><h3>Priyanshi Kakadiya</h3><div class="role-pills"><span>Analytics</span></div></article>
+          <article class="contributor-card"><h3>Shikshya Karki</h3><div class="role-pills"><span>Research &amp; Clinical Workflow</span></div></article>
+          <article class="contributor-card"><h3>Sowmya Thulasingam</h3><div class="role-pills"><span>QA &amp; Testing</span></div></article>
+          <article class="contributor-card"><h3>Tawonga Mapfumo</h3><div class="role-pills"><span>Documentation</span></div></article>
+          <article class="contributor-card"><h3>Vianey Flores Quijada</h3><div class="role-pills"><span>Security &amp; Compliance</span></div></article>
+          <article class="contributor-card contributor-card--spotlight"><h3>Yeafi Awal</h3><div class="role-pills"><span>Documentation</span><span>Research &amp; Clinical Workflow</span></div></article>
+          <article class="contributor-card"><h3>Zubariya Siddiqui</h3><div class="role-pills"><span>Research &amp; Clinical Workflow</span></div></article>
+        </div>
+
+        <p class="team-credit-note reveal">Roster preview based on the current roles spreadsheet. Final public names and role labels should still be confirmed by each student.</p>
       </div>
     </section>
   </main>
