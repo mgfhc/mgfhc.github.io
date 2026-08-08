@@ -213,6 +213,39 @@
       </div>
     </section>
 
+    <section class="section section-pad interop-section" id="interoperability">
+      <div class="shell interop-grid">
+        <div class="section-copy reveal">
+          <p class="eyebrow">Interoperability in practice</p>
+          <h2>Testing standards-based exchange</h2>
+          <p>The team tested authenticated FHIR R4 reads against OpenEMR and documented a simulated closed-loop HL7 v2 laboratory workflow using synthetic data.</p>
+
+          <div class="interop-facts">
+            <article>
+              <span>FHIR R4</span>
+              <strong>API retrieval</strong>
+              <p>Patient, Observation and DiagnosticReport reads were exercised through authenticated API requests.</p>
+            </article>
+            <article>
+              <span>HL7 v2</span>
+              <strong>Lab workflow</strong>
+              <p>Order and result handling was demonstrated with a mock laboratory stand-in rather than a live external lab.</p>
+            </article>
+          </div>
+        </div>
+
+        <figure class="media-shot interop-shot reveal">
+          <a href="assets/screenshots/fhir-diagnostic-report.png" target="_blank" rel="noopener" aria-label="Open FHIR DiagnosticReport API screenshot in a new tab">
+            <img src="assets/screenshots/fhir-diagnostic-report.png" alt="Postman showing an authenticated OpenEMR FHIR DiagnosticReport request returning a 200 OK JSON response" />
+          </a>
+          <figcaption>
+            <strong>Authenticated FHIR DiagnosticReport retrieval</strong>
+            <span>Postman · GET request · 200 OK · JSON response from the project OpenEMR environment.</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
     <section class="section section-pad" id="workstreams">
       <div class="shell">
         <div class="section-heading reveal">
