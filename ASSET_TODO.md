@@ -10,14 +10,15 @@
   - patient portal.
 - FHIR/Postman `DiagnosticReport` screenshot.
 - UI/UX evidence showing Canadian patient-registration customization.
+- Local AWS EC2 service icon.
+- Site favicon.
 
-## Before public launch
+## Remaining checks
 
 - Confirm the FHIR/Postman screenshot does not expose a usable bearer token or other secret.
 - Complete one final public-safety pass across every screenshot and link.
 - Finalize the team-credit names/consent decision.
 - Finalize the public contact shown in the footer.
-- Confirm the site favicon/branding assets are wired up as intended.
 
 ## Optional later
 

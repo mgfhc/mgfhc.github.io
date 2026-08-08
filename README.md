@@ -22,8 +22,8 @@ Then open `http://localhost:8000`.
 - `script.js` — navigation, reveal behavior, and screenshot lightbox
 - `assets/branding/` — local Maple Grove logo assets
 - `assets/screenshots/` — curated public-facing screenshots
-- `CONTENT_EVIDENCE.md` — internal source/evidence notes for copy accuracy
-- `ASSET_TODO.md` — remaining publication checks and decisions
+- `assets/icons/` — local technology/service icons
+- `ASSET_TODO.md` — remaining checks and optional follow-up
 
 ## Current site
 
@@ -44,7 +44,7 @@ Curated screenshots are used instead of raw evidence files so browser chrome, to
 
 ## GitHub Pages
 
-Planned public home:
+Public site:
 
 - GitHub organization: `mgfhc`
 - repository: `mgfhc.github.io`
