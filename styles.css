@@ -379,9 +379,14 @@ img { max-width: 100%; }
   box-shadow: 0 9px 26px rgba(30, 84, 69, .08);
 }
 .contributor-card--team-lead {
-  border-color: #78ad9b;
-  background: linear-gradient(145deg, #ffffff 0%, #e6f4ee 100%);
-  box-shadow: 0 12px 32px rgba(23, 100, 83, .13);
+  border: 2px solid var(--brand);
+  background: linear-gradient(145deg, #f8fcfa 0%, #d7ece4 100%);
+  box-shadow: 0 16px 38px rgba(23, 100, 83, .18), 0 0 0 4px rgba(23, 100, 83, .07);
+  transform: translateY(-3px);
+}
+.contributor-card--team-lead h3 {
+  color: var(--brand-2);
+  font-size: 20px;
 }
 .role-pills .role-pill--lead {
   border-color: var(--brand);
